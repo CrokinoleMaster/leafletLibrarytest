@@ -1,0 +1,13 @@
+doctype
+html(ng-app='mapApp')
+    head
+        link(rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css')
+        link(rel="stylesheet" href="main.css")
+    body
+        h1 map
+        #map-container(ng-controller='MapController')
+            leaflet(center='america' layers='layers' defaults='defaults' width='800px' height='600px')
+        script(src='http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js')
+        script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js')
+        script(src='lib/angular-leaflet.min.js')
+        script(src='app.js')
